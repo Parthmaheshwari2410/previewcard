@@ -1,0 +1,122 @@
+
+body {
+  background-color: rgb(249, 207, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.abc {
+  background: white;
+  border-radius: 14px;
+  border: solid;
+  width: 320px;
+  box-shadow: 0 4px 8px rgba(0, 255, 4, 0.1);
+  overflow: hidden;
+}
+
+.abc-images img {
+  margin: 10px;
+  width: 300px;
+  height: 160px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.continer {
+  padding: 16px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: rgb(255, 204, 2);
+  color: black;
+  font-weight: bold;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.date {
+  font-size: 12px;
+  margin: 8px 0;
+}
+
+.title {
+  font-size: 18px;
+  margin: 8px 0;
+}
+
+.description {
+  color: rgb(193, 192, 192);
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.name {
+  display: flex;
+  align-items: center;
+}
+
+.name span {
+  margin-left: 10px;
+}
+
+@media (min-width: 768px) {
+  .abc {
+      width: 400px;
+  }
+
+  .abc-images img {
+      width: 380px;
+      height: 220px;
+  }
+
+  .btn {
+      font-size: 14px;
+      padding: 6px 12px;
+  }
+
+  .title {
+      font-size: 22px;
+  }
+
+  .description {
+      font-size: 16px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  body {
+      padding: 10px;
+  }
+
+  .abc {
+      width: 100%;
+      box-shadow: none;
+  }
+
+  .abc-images img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+  }
+
+  .btn {
+      font-size: 10px;
+      padding: 2px 6px;
+  }
+
+  .title {
+      font-size: 16px;
+  }
+
+  .description {
+      font-size: 12px;
+  }
+}
+
